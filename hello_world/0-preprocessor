@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-#script that runs ccg and names file
-cpp "$CFILE" -o "$c"
+cpp -E $CFILE -o c
