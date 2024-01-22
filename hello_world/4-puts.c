@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * A program that prints some text with the put function.
- */
+ * main - A program that prints some text with the put function.
+ * return: 0 
 int main(void)
 {
 	char myput[] = "\"Programming is like building a multilingual puzzle";
