@@ -2,13 +2,11 @@
 
 /**
  * main - A program that prints some text with the put function.
- * return: 0 (Success)
+ * return - 0
  */
 int main(void)
 {
-	char myput[] = "\"Programming is like building a multilingual puzzle";
-
-	puts(myput);
+	puts("\"Programming is like building a multilingual puzzle");
 
 	return (0);
 }
