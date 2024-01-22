@@ -3,7 +3,7 @@
 /**
  * A program that prints some text with the put function.
  */
-int main()
+int main(void)
 {
 	char myput[] = "\"Programming is like building a multilingual puzzle";
 
