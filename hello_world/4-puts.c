@@ -9,5 +9,5 @@ int main()
 
 	puts(myput);
 
-	return 0;
+	return (0);
 }
