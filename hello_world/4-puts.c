@@ -1,11 +1,7 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- *
- * A program that prints some text with the put function.
- *
- * return: 0 (Success)
+ * main - entry point
+ * Return: 0
  */
 int main(void)
 {
