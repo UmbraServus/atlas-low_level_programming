@@ -4,7 +4,8 @@
  * main - Entry point
  *
  * A program that prints some text with the put function.
- * return: Always 0 (Success)
+ *
+ * return: 0 (Success)
  */
 int main(void)
 {
