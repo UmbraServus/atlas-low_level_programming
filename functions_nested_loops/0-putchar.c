@@ -1,30 +1,31 @@
-#include <stdio.h>
+#include "main.h"
 /** main - entry point
  *
  * return: 0
  */
+int _putchar(char c)
 
 int main()
 {
 	int word;
 
 	word = '_';
-	putchar(word);
+	_putchar(word);
 	word = 'p';
-	putchar(word);
+	_putchar(word);
 	word = 'u';
-	putchar(word);
+	_putchar(word);
 	word = 't';
-	putchar(word);
+	_putchar(word);
 	word = 'c';
-	putchar(word);
+	_putchar(word);
 	word = 'h';
-	putchar(word);
+	_putchar(word);
 	word = 'a';
-	putchar(word);
+	_putchar(word);
 	word = 'r';
-	putchar(word);
-	putchar('\n');
+	_putchar(word);
+	_putchar('\n');
 	return(0);
 }
 
