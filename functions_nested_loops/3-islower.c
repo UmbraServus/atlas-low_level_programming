@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main- entry point
+ * _islower- checks for lowercase
+ * @a: the char that is referenced for the function
  *
- * Return: 0
+ * Return: 1 if true and 0 if false.
+ *
  */
 int _islower(int a)
 {
