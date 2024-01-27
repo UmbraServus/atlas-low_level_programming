@@ -1,10 +1,11 @@
 #include "main.h"
-/** main - entry point
+/** 
+ * main - entry point
  *
  * return: 0
  */
 
-int main()
+int main(void)
 {
 	int word;
 
@@ -24,6 +25,6 @@ int main()
 	_putchar(word);
 	word = 'r';
 	_putchar(word);
-	_putchar('\n');
+	_putchar ('\n');
 	return(0);
 }
