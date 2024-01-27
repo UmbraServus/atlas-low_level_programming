@@ -3,7 +3,7 @@
  * _isalpha- checks if a char is a letter
  * @a: char to be checked
  *
- * return: 1 if true and 0 if false
+ * Return: 1 if true and 0 if false
  *
  */
 
