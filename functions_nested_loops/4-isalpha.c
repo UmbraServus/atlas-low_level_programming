@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - checks if a char is a letter aA - zZ
+ * _isalpha- checks if a char is a letter
  * @a: char to be checked
  *
  * return: 1 if true and 0 if false
