@@ -2,7 +2,6 @@
 #define HEADER_H
 #include <stdio.h>
 
-void print_something(void);
 int _putchar(char c);
-
+void print_alphabet(void);
 #endif
