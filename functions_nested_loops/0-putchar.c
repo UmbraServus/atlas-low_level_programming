@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * main - entry point
+ * main- entry point
  *
- * return: 0
+ * Return: 0
  */
 
 int main(void)
+
 {
 	int word;
 
