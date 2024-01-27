@@ -4,7 +4,7 @@
  * return: 0
  */
 
-int main()
+int main();
 {
 	int word;
 
@@ -27,4 +27,3 @@ int main()
 	_putchar('\n');
 	return(0);
 }
-
