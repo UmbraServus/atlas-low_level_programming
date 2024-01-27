@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * main - entry point
  *
  * return: 0
@@ -26,5 +26,5 @@ int main(void)
 	word = 'r';
 	_putchar(word);
 	_putchar ('\n');
-	return(0);
+	return (0);
 }
