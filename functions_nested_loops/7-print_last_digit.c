@@ -20,4 +20,5 @@ int print_last_digit(int a)
 
 	       _putchar(a);
 	}
-return (0);	
+return (0);
+}
