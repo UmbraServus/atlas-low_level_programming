@@ -13,7 +13,7 @@ int _abs(int a)
 	else if (a < 0)
 	{
 		int b = a * -1
-			putchar(b);
+		_putchar(b);
 	}
 	return (0);
 }
