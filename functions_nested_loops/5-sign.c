@@ -16,15 +16,15 @@ int print_sign(int n)
 		return (1);
 	}
 
-	else if (n == 0)
-	{
-		_putchar(n);
-			return (0);
-	}
-
 	else if (n < 0)
 	{
 		_putchar('-');
-		return(-1);
+			return (-1);
+	}
+
+	else if (n == 0)
+	{
+		_putchar(n);
+		return(0);
 	}
 }
