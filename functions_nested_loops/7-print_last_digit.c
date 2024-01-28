@@ -1,7 +1,10 @@
 #include "main.h"
 /**
+ * print_last_digit- to print the last digit of a given int
+ * @a: number to get the last digit from
+ * @b: last digit value
  *
- *
+ * Return: b value
  *
  */
 
