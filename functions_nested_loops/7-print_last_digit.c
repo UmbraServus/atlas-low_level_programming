@@ -17,8 +17,8 @@ int print_last_digit(int a)
 	else if (b < 0)
 	{
 		b = b * -1;
+	}
 
 	       _putchar(b);
-	}
-return (b);
+	       return (b);
 }
