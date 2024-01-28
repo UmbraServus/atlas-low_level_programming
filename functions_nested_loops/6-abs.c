@@ -4,13 +4,13 @@
  *
  */
 
-int _abs(int)
+int _abs(int a)
 {
-	if (a > 0);
+	if (a > 0)
 	{
 		_putchar(a);
 	}
-	else if (a < 0);
+	else if (a < 0)
 	{
 		int b *= -a
 			putchar(b);
