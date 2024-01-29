@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isdigit- checks to see if its a number or a letter
- * @: number to be checked
+ * @c: number to be checked
  *
  * Return: 1 if a digit 0 otherwise
  */
