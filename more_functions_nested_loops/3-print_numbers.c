@@ -6,7 +6,7 @@
  * Return: void
  */
 
-void print_numbers(void);
+void print_numbers(void)
 {
 	for(int a = 0; a <= 9; a++)
 	{
