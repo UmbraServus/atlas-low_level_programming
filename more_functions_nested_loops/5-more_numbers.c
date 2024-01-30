@@ -19,7 +19,7 @@ void more_numbers(void)
 		
 		_putchar('\n');
 		
-		a++
+		a++;
 	}
 
 
