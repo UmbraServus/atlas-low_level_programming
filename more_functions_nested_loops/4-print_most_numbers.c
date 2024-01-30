@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_most_numbers- prints numbers 0 - 9 omitting 2 and 4
- * @i: number string to be fed to putchar
+ *
  *
  * Return- void
  */
