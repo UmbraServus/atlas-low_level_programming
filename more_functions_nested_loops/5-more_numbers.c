@@ -4,10 +4,12 @@
  *
  * Return: void
  */
-void more_numbers(void);
+void more_numbers(void)
 {
 	int i;
-	i = 0
+
+	i = 0;
+
 	while (i < 10)
 	{
 		if (i < 14)
