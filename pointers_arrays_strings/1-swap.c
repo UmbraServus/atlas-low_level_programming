@@ -3,6 +3,8 @@
 /**
  * swap_int- swaps the ints a will = b and b = a.
  *
+ * @a: parameter to swap with b
+ * @b: parameter to be swapped with a
  *
  *
  * Return: void
