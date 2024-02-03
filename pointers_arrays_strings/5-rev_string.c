@@ -7,6 +7,14 @@
  *
  */
 
+/**
+ * _strlen- calculates length of string
+ * @s: string to be calculated
+ *
+ * Return: x
+ *
+ */
+
 int _strlen(char *s)
 {
 
