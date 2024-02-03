@@ -1,15 +1,18 @@
 #include "main.h"
 /**
+ * rev_string- reverses value of string
+ * @s: string value to be reversed
  *
- *
+ * Return: void
  *
  */
 
 void rev_string(char *s);
 {
-	len = strlen(s);
+	int len;
 	int x;
 	char temp;
+	len = strlen(s);
 
 	for (x = 0; x < len / 2; x++)
 	{
