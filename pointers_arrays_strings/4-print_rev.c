@@ -7,9 +7,13 @@
 
 void print_rev(char *s)
 {
-	int _strlen(char *s)
 	int x, len;
-	len = _strlen(s);
+	
+	len = 0
+		while (s[len] != '\0')
+		{
+			len++
+		}
 	
 	for(x = len - 1; x == 0; x--)
 	{	
