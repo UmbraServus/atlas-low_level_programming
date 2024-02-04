@@ -1,7 +1,10 @@
 #include "main.h"
 /**
+ * _strcat- appends src onto dest and adds a null.
+ * @dest: the destination string of the expression.
+ * @src: the string to be appended to the end of dest.
  *
- *
+ * Return: beginning_dest
  *
  */
 
