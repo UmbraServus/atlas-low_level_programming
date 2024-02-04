@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat- appends src onto dest and adds a null.
+ * _strncat- appends src onto dest and adds a null.
  * @dest: the destination string of the expression.
  * @src: the string to be appended to the end of dest.
  * @n: the number of character(s) to be appended from src
