@@ -25,6 +25,10 @@ char *cap_string(char *str)
 				str[n] = str[n] - 32;
 				word = 1;
 			}
+			else if (word && str[n] >= 65 && str[n] <= 90)
+			{
+				word = 0
+			}
 		}
 	return (str);
 }
