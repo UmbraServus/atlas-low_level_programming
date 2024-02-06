@@ -11,7 +11,7 @@ char *cap_string(char *str)
 {
 	int word, n;
 	
-	word = 0
+	word = 0;
 
 		for ( n = 0; str[n]; n++)
 		{
