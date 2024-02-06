@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 	int word, n;
-	
+
 	word = 0;
 
 		for ( n = 0; str[n]; n++)
@@ -27,7 +27,8 @@ char *cap_string(char *str)
 			}
 			else if (word && str[n] >= 65 && str[n] <= 90)
 			{
-				word = 0
+				word = 0;
+
 			}
 		}
 	return (str);
