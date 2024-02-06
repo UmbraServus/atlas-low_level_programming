@@ -15,7 +15,7 @@ char *cap_string(char *str)
 
 		for ( n = 0; str[n]; n++)
 		{
-			if ((str[n] >= 'A' && str[n] <= 'Z') || str[n] == 0 || str[n] == ' ' || str[n] == '\t' || str[n] == '\n' || str[n] == ',' || str[n] == ';' || str[n] == '.' || str[n] == '!' || str[n] == '?' || str[n] == '"' || str[n] == '(' || str[n] == ')' || str[n] == '{' || str[n] == '}')
+			if (|| str[n] == 0 || str[n] == ' ' || str[n] == '\t' || str[n] == '\n' || str[n] == ',' || str[n] == ';' || str[n] == '.' || str[n] == '!' || str[n] == '?' || str[n] == '"' || str[n] == '(' || str[n] == ')' || str[n] == '{' || str[n] == '}')
 			{
 				word = 0;
 			}
@@ -23,6 +23,10 @@ char *cap_string(char *str)
 			else if (!word && str[n] >= 'a' && str[n] <= 'z')
 			{
 				str[n] = str[n] - 32;
+				word = 1;
+			}
+			else if (!word && str[n] >= 'A' && str[n] <= 'Z')
+			{
 				word = 1;
 			}
 		}
