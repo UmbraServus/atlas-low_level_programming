@@ -20,14 +20,10 @@ char *cap_string(char *str)
 				word = 0;
 			}
 
-			else if (!word && str[n] >= 97 && str[n] <= 122)
+			else if (!word && str[n] >= 'a' && str[n] <= 'z')
 			{
 				str[n] = str[n] - 32;
 				word = 1;
-			}
-			else if (!word && str[n] >= 65 && str[n] <= 90)
-			{
-
 			}
 		}
 	return (str);
