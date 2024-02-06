@@ -1,12 +1,13 @@
 #include "main.h"
 /**
+ * capr_string- capitalizes the first of every word in a string
+ * @str: string to feed into the function
  *
- *
- *
+ * Return: str
  *
  */
 
-char *cap_string(char *str);
+char *cap_string(char *str)
 {
 	int word, n;
 	
