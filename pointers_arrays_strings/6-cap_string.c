@@ -25,7 +25,7 @@ char *cap_string(char *str)
 				str[n] = str[n] - 32;
 				word = 1;
 			}
-			else if (!word && str[n] >= 'A' && str[n] <= 'Z' || !word && str[n] >= 48 && str[n] <= 57)
+			else if ((!word && str[n] >= 'A' && str[n] <= 'Z') || (!word && str[n] >= 48 && str[n] <= 57))
 			{
 				word = 1;
 			}
