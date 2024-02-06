@@ -15,20 +15,11 @@ char *cap_string(char *str)
 
 		for (n = 0; str[n]; n++)
 		{
-		if (str[n] == 0 ||
-				str[n] == ' ' ||
-				str[n] == '\t' ||
-				str[n] == '\n' ||
-			       str[n] == ',' ||
-			       str[n] == ';' ||
-			       str[n] == '.' ||
-			       str[n] == '!' ||
-			       str[n] == '?' ||
-			       str[n] == '"' ||
-			       str[n] == '(' ||
-			       str[n] == ')' ||
-			       str[n] == '{' ||
-			       str[n] == '}')
+		if (str[n] == ' ' || str[n] == '\t' || str[n] == '\n' || 
+				str[n] == ',' || str[n] == ';' || str[n] == '.' ||
+				str[n] == '!' || str[n] == '?' || str[n] == '"' ||
+				str[n] == '(' || str[n] == ')' || str[n] == '{' || 
+				str[n] == '}')
 			{
 				word = 0;
 			}
