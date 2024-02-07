@@ -27,7 +27,7 @@ char *leet(char *str)
 
 	n_map = 10;
 
-	for (str_ch = 0; str[str_ch]; str_ch++)
+	for (str_ch = 0; str[str_ch] != '\0'; str_ch++)
 	{
 		for (map_row = 0; map_row < n_map; map_row++)
 		{
