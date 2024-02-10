@@ -21,7 +21,7 @@ int _sqrt_recursion(int n)
 		return (n);
 	else
 
-	return(sqrt_helper(n, n / 2));
+	return(sqrt_helper(n, 1));
 }
 
 int sqrt_helper(int n, int m)
@@ -32,7 +32,7 @@ int sqrt_helper(int n, int m)
 
 	else if (m * m > n)
 
-	return (sqrt_helper(n, m - 1));
+	return (-1);
 
 	else
 		return (sqrt_helper(n, m + 1));
