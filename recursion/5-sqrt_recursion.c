@@ -14,7 +14,7 @@ int _sqrt_recursion(int n)
 	m = n / 2;
 
 	if (m * m > n)
-	return (_sqrt_recursion(int n - ( m - 1) * (m - 1)));
+	return (_sqrt_recursion(n - ( m - 1) * (m - 1)));
 
 	else if (m * m == n)
 	{
