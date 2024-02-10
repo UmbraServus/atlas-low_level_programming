@@ -29,7 +29,6 @@ int sqrt_helper(int n, int m)
 	
 	else if (m * m > n)
 	{
-		return (-1);
-	}
 	return (sqrt_helper(n, n - 1));
+	}
 }
