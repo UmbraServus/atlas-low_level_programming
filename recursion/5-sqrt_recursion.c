@@ -7,7 +7,6 @@
  * Return: natural sqrt, -1 or 1
  *
  */
-
 int sqrt_helper(int n, int m);
 
 
@@ -21,7 +20,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt_helper: helper function to do the sqrt recursively
+ * sqrt_helper- helper function to do the sqrt recursively
  * @n: number to find sqrt of
  * @m: the numbers to iterate thru until found a natural square of n
  *
