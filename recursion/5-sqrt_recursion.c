@@ -7,21 +7,29 @@
  *
  */
 
+int sqrt_helper(int n, int m);
+
+
 int _sqrt_recursion(int n)
 {
-	int m;
-
-	m = n / 2;
-
-	if (m * m > n)
-	return (_sqrt_recursion(n - ( m - 1) * (m - 1)));
-
-	else if (m * m == n)
-	{
-		return (m);
-	}
-	else if ( m < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
+	
+	return(sqrt_helper(n, n / 2));
+}
+
+int sqrt_helper(int n, int m)
+{
+	if (m * m == n)
+	{
+		return (m);
+	}
+	
+	else if (m * m > n)
+	{
+		return (-1);
+	}
+	return (sqrt_helper(n, n - 1));
 }
