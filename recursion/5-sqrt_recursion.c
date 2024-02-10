@@ -34,4 +34,6 @@ int sqrt_helper(int n, int m)
 
 	return (sqrt_helper(n, m - 1));
 
+	else
+		return (sqrt_helper(int n, m + 1));
 }
