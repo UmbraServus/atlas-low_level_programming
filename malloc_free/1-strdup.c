@@ -24,6 +24,14 @@ int _strlen(char *s)
 	return (x);
 }
 
+/**
+ * _strdup- duplicates a string and allocates memory not in that order.
+ * @str: string to be duplicated
+ *
+ * Return: NULL if fail and new_str if success
+ *
+ */
+
 char *_strdup(char *str)
 {
 	char *new_str;
@@ -31,10 +39,16 @@ char *_strdup(char *str)
 	int length;
 
 	i = 0;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	length = _strlen(str);
 	new_str = malloc(sizeof(char) * (length + 1));
 
-	if (str == NULL || new_str == NULL)
+	if (new_str == NULL)
 	{
 		return (NULL);
 	}
