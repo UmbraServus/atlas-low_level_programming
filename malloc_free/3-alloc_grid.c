@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid: allocates memory to a grid with 0's 
+ * alloc_grid: allocates memory to a grid with 0's
  * @width: the width of the grid or the rows
  * @height: the height of the grid or the number of columns
  *
@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 	}
 
 	grid = (int **)malloc(sizeof(int *) * height);
-	
+
 	if (grid == NULL)
 	{
 		return (NULL);
