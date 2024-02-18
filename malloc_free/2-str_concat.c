@@ -1,37 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * _strlen- calculates length of string
- * @s: string to be calculated
- *
- * Return: x
- *
- */
-
-int _strlen(char *s)
-{
-
-	int x;
-
-	x = 0;
-
-		while (s[x] != '\0')
-		{
-			x++;
-		}
-	return (x);
-}
-
+#include "strlen.c"
 /**
  * str_concat- appends s1 onto s2 into a new string
  * @s1: string to be appended to in a new string
  * @s2: string to append to s1 in a new string
  *
  * Return: NULL if fail new string if success
- *
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *new_str;
@@ -77,7 +54,6 @@ char *str_concat(char *s1, char *s2)
 		j++;
 		i++;
 	}
-
 	new_str[i] = '\0';
 	return (new_str);
 }
