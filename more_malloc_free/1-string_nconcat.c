@@ -10,7 +10,7 @@
  *
  * Return: NULL if fail new string if success
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_str;
 	int i;
