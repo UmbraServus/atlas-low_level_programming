@@ -13,9 +13,9 @@
 void *malloc_checked(unsigned int b)
 {
 	void *mallcheck;
-	
+
 		mallcheck = malloc(b);
-	
+
 		if (mallcheck == NULL)
 		{
 			exit(98);
