@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "strlen.c"
 /**
- * str_concat- appends s1 onto s2 into a new string
+ * string_nconcat- appends s1 onto s2 into a new string
  * @s1: string to be appended to in a new string
  * @s2: string to append to s1 in a new string
  * @n: the number of characters of s2 to be appended
