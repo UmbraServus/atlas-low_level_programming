@@ -12,25 +12,26 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    void *ptr
-	    size_t total_size
+	void *ptr
+	    size_t total
+	    size_t i
+
     if (nmemb == 0 || size == 0)
     {
         return NULL;
     }
-
-	    total_size = nmemb * size;
-
-	    ptr = malloc(total_size);
-    if (ptr == NULL)
+	
+	total = nmemb * size;
+	ptr = malloc(total);
+	
+	if (ptr == NULL)
     {
 	     return NULL;
     }
 
     char *byte_ptr = (char *)ptr;
-    size_t i
 
-    for (i = 0; i < total_size; i++)
+    for (i = 0; i < total; i++)
     {
         byte_ptr[i] = 0;
     }
