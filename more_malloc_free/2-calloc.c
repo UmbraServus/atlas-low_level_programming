@@ -12,9 +12,9 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr
-	    size_t total
-	    size_t i
+	void *ptr;
+	size_t total;
+	size_t i;
 
     if (nmemb == 0 || size == 0)
     {
