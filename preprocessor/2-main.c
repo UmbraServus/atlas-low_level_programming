@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
-	printf("%s\n",_FILE_);
-	return;
+	printf("%s\n",__FILE__);
+	return (0);
 }
