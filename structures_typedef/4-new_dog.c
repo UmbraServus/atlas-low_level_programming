@@ -4,11 +4,12 @@
 #include "main.h"
 #include "strdup.c"
 /**
+ * new_dog- new dog to be entered into struct
+ * @name: name of new dog
+ * @age: age of new dog
+ * @owner: owners name of new dog
  *
- *
- *
- *
- *
+ * Return: pointer to dog_t nd
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -20,7 +21,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	
+
 	nd->name = _strdup(name);
 	if (nd->name == NULL)
 	{
