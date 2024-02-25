@@ -3,9 +3,10 @@
 #include "dog.h"
 
 /**
+ * print_dog- prints the values of the struct dog elements
+ * @d: points to the struct dog
  *
- *
- *
+ * Return: void
  *
  */
 
@@ -20,7 +21,7 @@ void print_dog(struct dog *d)
 	{
 		printf("Name: (nil)\n");
 	}
-	
+
 	else
 	{
 		printf("Name: %s\n", d->name);
@@ -33,7 +34,7 @@ void print_dog(struct dog *d)
 
 	else
 	{
-		printf("Age: %f.1\n", d->age);
+		printf("Age: %f\n", d->age);
 	}
 
 	if (d->owner == NULL)
