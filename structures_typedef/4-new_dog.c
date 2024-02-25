@@ -12,9 +12,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	nd->name = name;
+	nd->age = age;
+	nd->owner = owner;
 	
 	return (nd);
 }
