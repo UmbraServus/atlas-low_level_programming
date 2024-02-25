@@ -14,7 +14,7 @@ void free_dog(dog_t *d)
 {
 	if (d == NULL)
 	{
-		exit(98);
+		return;
 	}
 
 	free(d->name);
