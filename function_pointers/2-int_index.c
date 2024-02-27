@@ -3,7 +3,7 @@
 #include "function_pointers.h"
 
 /**
- * int_index- searches thru numbers and uses comparison functions to find a num.
+ * int_index- searches thru nums and uses comparison functions to find a num.
  * @array: array to search thru
  * @size: how many numbers to searh thru
  * @cmp: comparison function to use
@@ -30,4 +30,4 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	}
 	return (-1);
-}	
+}
