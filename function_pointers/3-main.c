@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	op = argv[2];
 
 	
-	if (*op != '+' || *op != '*' || *op != '-' || *op != '/' || *op != '%' || (strlen(argv[2]) != 1))
+	if (*op != '+' && *op != '*' && *op != '-' && *op != '/' && *op != '%' || (strlen(argv[2]) != 1))
 	{
 		printf("error\n");
 		return (99);
