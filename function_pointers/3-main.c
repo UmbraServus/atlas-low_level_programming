@@ -29,10 +29,10 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	op = argv[2];
 
-	operation = get_op_func(op);
 	
-	if (op != '+' || op != '*' || op != '-' || op != '/' || op != %)
+	if (*op != '+' || *op != '*' || *op != '-' || *op != '/' || *op != '%' || (strlen(argv[2]) != 1))
 	{
+		printf("error\n");
 		return (99);
 
 	}
@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 		return (100);
 	}
 
+	operation = get_op_func(op);
 	result = 0;
 	result = operation(num1, num2);
 
