@@ -1,18 +1,22 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
- * @argc: Argument count
- * @argv: Argument vector
+ * main()- the main function
+ * @argc: number of args
+ * @argv: arr of args
  *
- * Return: Always 0
+ * Return: err or 0
  */
+
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
-	int (*operation)(int, int);
+	int num1, num2;
+	char op;
+	char *valid_ops;
 
 	if (argc != 4)
 	{
@@ -22,22 +26,21 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operation = get_op_func(argv[2]);
+	op = argv[2][0];
+	valid_ops = "+-*/%";
 
-	if (operation == NULL)
+	if ((strchr(valid_ops, op) == NULL) || (strlen(argv[2]) != 1))
 	{
 		printf("Error\n");
 		return (99);
 	}
 
-	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	if ((op == '/' || op == '%') && (num1 == 0 || num2 == 0))
 	{
 		printf("Error\n");
 		return (100);
 	}
 
-	result = operation(num1, num2);
-	printf("%d\n", result);
-
+	printf("%d\n", get_op_func(&op)(num1, num2));
 	return (0);
 }
