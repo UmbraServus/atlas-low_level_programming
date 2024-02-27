@@ -30,6 +30,18 @@ int main(int argc, char *argv[])
 	op = argv[2];
 
 	operation = get_op_func(op);
+	
+	if (op != '+' || op != '*' || op != '-' || op != '/' || op != %)
+	{
+		return (99);
+
+	}
+
+	if ((op == '/' || op == '%') && (num1 == 0 || num2 == 0))
+	{
+		printf("Error\n");
+		return (100);
+	}
 
 	result = 0;
 	result = operation(num1, num2);
