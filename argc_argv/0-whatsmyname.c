@@ -12,5 +12,7 @@
 
 void main (int argc, char *argv[])
 {
+	argc = argc;
+
 	printf("%s\n", argv[0]);
 }
