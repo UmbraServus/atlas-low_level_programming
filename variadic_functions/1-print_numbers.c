@@ -21,20 +21,21 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 
 
-	for (i = 1; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		number = va_arg(args, int);
+		printf("%d", number);
 
-		if (separator != NULL)
+		if (i < n - 1)
 		{
-			printf("%s%d",separator , number);
+			if (separator != NULL)
+			{
+				printf("%s",separator);
+			}
 		}
-		else 
-		{
-			printf("%d", number);
-		}
-
 	}
 
 		printf("\n");
+
+		va_end(args);
 }
