@@ -6,9 +6,10 @@
 /**
  * print_numbers- prints n amount of numbers seprated by a separator if
  * not null
- * @
+ * @separator: the character to use to separate the numbers
+ * @n the amount of numbers to iterate thru
  *
- *
+ *Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -30,7 +31,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			if (separator != NULL)
 			{
-				printf("%s",separator);
+				printf("%s", separator);
 			}
 		}
 	}
