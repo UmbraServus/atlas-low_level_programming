@@ -7,7 +7,7 @@
  * print_numbers- prints n amount of numbers seprated by a separator if
  * not null
  * @separator: the character to use to separate the numbers
- * @n the amount of numbers to iterate thru
+ * @n: the amount of numbers to iterate thru
  *
  *Return: void
  */
