@@ -5,7 +5,7 @@
  * main- prints each argv input
  * @argc: number of inputs
  * @argv: array of string arg vectors
- * 
+ *
  * Return: 0
  */
 
