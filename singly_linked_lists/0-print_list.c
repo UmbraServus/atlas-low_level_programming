@@ -34,7 +34,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s", pointer->len,  pointer->str);
 			pointer = pointer->next;
-			Count++
+			Count++;
 		}
 	return (Count);
 	}
