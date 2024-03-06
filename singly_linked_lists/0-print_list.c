@@ -36,6 +36,6 @@ size_t print_list(const list_t *h)
 			pointer = pointer->next;
 			Count++;
 		}
-	return (Count);
 	}
+	return (Count);
 }
