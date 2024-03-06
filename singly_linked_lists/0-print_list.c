@@ -27,12 +27,12 @@ size_t print_list(const list_t *h)
 	{
 		if (pointer->str == NULL)
 		{
-			printf("[0] nil/n");
+			printf("[0] nil\n");
 		}
 		
 		else
 		{
-			printf("[%d]/n %s/n", pointer->len,  pointer->str);
+			printf("[%d] %s\n", pointer->len,  pointer->str);
 			pointer = pointer->next;
 			Count++;
 		}
