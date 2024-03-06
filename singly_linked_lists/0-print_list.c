@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "linked_list.h"
+#include "lists.h"
 /**
  * print_list- prints through the singly linked list
  * @h: points to a node that points to another node ect, ect ...
