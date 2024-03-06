@@ -32,7 +32,7 @@ size_t print_list(const list_t *h)
 		
 		else
 		{
-			printf("[%d] %s", pointer->len,  pointer->str);
+			printf("[%d]/n %s/n", pointer->len,  pointer->str);
 			pointer = pointer->next;
 			Count++;
 		}
