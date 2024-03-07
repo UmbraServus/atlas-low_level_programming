@@ -13,21 +13,18 @@
 
 int _strlen(const char *s)
 {
-
 	int x;
-
-	x = 0;
-
-		while (s[x] != '\0')
+	
+	for(x = 0; s[x] != '\0; x++)
 		{
-			x++;
+
 		}
 	return (x);
 }
 
 /**
- * add_node_end: adds node to the end of the line of lists before the NULL pointer
- * @head: beggining of the line to cycle thru til NULL or if NULL already you are first in line
+ * add_node_end: adds node to the end of the line of lists before the NULL ptr
+ * @head: beggining of the line to cycle thru til NULL
  * @str: constant char to be stored and counted with strlen
  *
  * Return: new_node or NULL on fail
@@ -36,7 +33,6 @@ int _strlen(const char *s)
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-
 	list_t *new_node;
 	list_t *temp_node;
 
@@ -61,20 +57,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (*head == NULL)
 	{
 		*head = new_node;
-
 	}
 
 	else
 	{
 		temp_node = *head;
-		
-		while(temp_node->next != NULL)
+
+		while (temp_node->next != NULL)
 		{
 			temp_node = temp_node->next;
 		}
-
 		temp_node->next = new_node;
 	}
-
 	return (new_node);
 }
