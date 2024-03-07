@@ -4,6 +4,28 @@
 #include "lists.h"
 
 /**
+ * _strlen- calculates length of string
+ * @s: string to be calculated
+ *
+ * Return: x
+ *
+ */
+
+int _strlen(const char *s)
+{
+
+	int x;
+
+	x = 0;
+
+		while (s[x] != '\0')
+		{
+			x++;
+		}
+	return (x);
+}
+
+/**
  * add_node- adds a node to the linked list
  * @head: head of the line before the NULL
  * @str: string to be duped and also counted
