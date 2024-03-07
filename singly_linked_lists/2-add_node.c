@@ -30,7 +30,7 @@ int _strlen(const char *s)
  * @head: head of the line before the NULL
  * @str: string to be duped and also counted
  *
- *
+ * Return: head pointer or NULL if head or new_node is NULL
  *
  */
 
@@ -45,7 +45,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	new_node = NULL;
 	new_node = malloc(sizeof(list_t));
-	
+
 	if (new_node == NULL)
 	{
 		return (NULL);
