@@ -14,16 +14,16 @@
 int _strlen(const char *s)
 {
 	int x;
-	
+
 	for (x = 0; s[x] != '\0'; x++)
 		{
-			
+
 		}
 	return (x);
 }
 
 /**
- * add_node_end: adds node to the end of the line of lists before the NULL ptr
+ * add_node_end- adds node to the end of the line of lists before the NULL ptr
  * @head: beggining of the line to cycle thru til NULL
  * @str: constant char to be stored and counted with strlen
  *
