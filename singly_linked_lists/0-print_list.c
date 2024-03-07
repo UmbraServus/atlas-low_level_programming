@@ -13,12 +13,13 @@ size_t print_list(const list_t *h)
 {
 	int Count;
 	const list_t *pointer = NULL;
+
 	pointer = h;
 	Count = 0;
 
 	if (h == NULL)
 	{
-		return(0);
+		return (0);
 	}
 
 
@@ -30,7 +31,7 @@ size_t print_list(const list_t *h)
 			pointer = pointer->next;
 			Count++;
 		}
-		
+
 		else
 		{
 			printf("[%d] %s\n", pointer->len,  pointer->str);
