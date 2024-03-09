@@ -5,4 +5,5 @@
 4-frees the linked lists
 5-frees the linked lists and sets head to null
 6-deletes the current head and moves the head up one, returns the data of the deleted head.
-7-
+7- Iterates thru the head to the nth index and returns that node.
+8-
