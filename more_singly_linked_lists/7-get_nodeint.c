@@ -4,8 +4,8 @@
 
 /**
  * get_nodeint_at_index- takes u 2 node at nth index and returns said index
- * @head the beginning of the list
- * @index the element of the list we are iterating to.
+ * @head: the beginning of the list
+ * @index: the element of the list we are iterating to.
  *
  *
  * Return: the node at the nth index.
