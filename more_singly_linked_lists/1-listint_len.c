@@ -4,7 +4,7 @@
 
 /**
  * listint_len- counts the number of elements in the list.
- * @h the head of the list
+ * @h: the head of the list
  *
  *
  * Return: counter of elements
