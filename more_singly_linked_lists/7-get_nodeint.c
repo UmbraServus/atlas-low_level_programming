@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index- takes you to node at certain index and returns said index
+ * get_nodeint_at_index- takes u 2 node at nth index and returns said index
  * @head the beginning of the list
  * @index the element of the list we are iterating to.
  *
