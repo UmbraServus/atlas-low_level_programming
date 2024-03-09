@@ -26,8 +26,8 @@ typedef struct list_s
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 /** Prototype Functions */
