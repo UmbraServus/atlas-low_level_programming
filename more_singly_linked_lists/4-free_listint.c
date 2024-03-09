@@ -4,7 +4,7 @@
 
 /**
  * free_listint- frees each structure in the linked list
- * @head the head of the list to be iterate thru
+ * @head: the head of the list to be iterate thru
  *
  * Return: void
  *
