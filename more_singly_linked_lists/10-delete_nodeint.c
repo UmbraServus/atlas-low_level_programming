@@ -5,9 +5,10 @@
 /**
  * delete_nodeint_at_index- delets the node at the nth index
  * @index: the nth index to iterate to
+ * @head: head ref for the list to go thru until nth index
  *
  *
- *
+ * Return: -1 on fail and 1 on success
  *
  */
 
