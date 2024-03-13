@@ -42,7 +42,7 @@ unsigned int binary_to_uint(const char *b)
 	result = 0;
 	length = _strlen(b);
 
-	if (b == NULL)
+	if (*b == NULL)
 	{
 		return (0);
 	}
