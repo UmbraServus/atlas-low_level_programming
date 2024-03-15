@@ -13,7 +13,7 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t counter;
-	const dlistint_t current;
+	const dlistint_t *current;
 
 	counter = 0;
 	current = h;
