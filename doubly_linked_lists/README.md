@@ -4,6 +4,6 @@
 3- add node to end of list
 4- frees the linked list
 5- go to nth index of the linked list and return that node
-6-
+6- sums all the data from each node in the linked lists
 7-
 8-
