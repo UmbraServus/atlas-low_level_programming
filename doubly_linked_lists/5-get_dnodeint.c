@@ -7,6 +7,7 @@
  * @head: start of linked list
  * @index: number of nodes to traverse
  *
+ * Return: NULL on fail or outside index, return current node on success
  *
  */
 
@@ -21,7 +22,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		if (current == NULL)
 		{
-			return(NULL);
+			return (NULL);
 		}
 
 		current = current->next;
