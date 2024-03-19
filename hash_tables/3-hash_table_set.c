@@ -5,10 +5,12 @@
 
 
 /**
+ * hash_table_set- sets the hash table with value and keys
+ * @ht: the hash table to bet set
+ * @key: the key to use to get the hash and index
+ * @value: the value to be stored
  *
- *
- *
- *
+ * Return: -1 on failure and 1 on success
  *
  */
 
@@ -20,7 +22,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht || key || value == NULL)
 	{
-		return (-1)
+		return (-1);
 	}
 
 	if (array_index == NULL)
