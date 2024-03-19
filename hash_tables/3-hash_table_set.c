@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "hash_tables.h"
+
 
 /**
  *
@@ -12,8 +14,8 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned int index;
-
+	unsigned int index = key_index((const unsigned char *)key, ht->size);
+	hash_node_t *prev;
 	hash_node_t *array_index = ht->array[index];
 
 	if (array_index == NULL)
@@ -32,7 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 
 		array_index->value = malloc(sizeof(value) + 1);
-		if (array->value == NULL)
+		if (array_index->value == NULL)
 		{
 			free(array_index);
 			return (-1);
@@ -46,14 +48,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (1);
 	}
 
-	hash_node_t *prev;
-
 	while (array_index != NULL)
 	{
 		if (strcmp(array_index->key,key) == 0)
 		{
 			free (array_index->value);
-			strdup(array_index->value, value);
+			array_index->value = strdup(value);
 			return (1);
 		}
 
@@ -68,8 +68,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (-1);
 	}
-	strdup(array_index->key, key);
-	strdup(array_index->value, value);
+	array_index->key = strdup(key);
+	array_index->value = strdup(value);
 
 	return (1);
 }
