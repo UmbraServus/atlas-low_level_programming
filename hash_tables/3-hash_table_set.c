@@ -57,7 +57,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 
 		prev = array_index;
-		array_index = prev->next
+		array_index = prev->next;
 
 	}
 
