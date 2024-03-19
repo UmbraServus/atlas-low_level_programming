@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * dlistint_len counts elements thru a doubly linked list
+ * dlistint_len- counts elements thru a doubly linked list
  * @h: starting point in the doubly linked list
  *
  * Return: counter
