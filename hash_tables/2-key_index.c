@@ -6,7 +6,7 @@
  * key_index- uses hash algorithm to turn key into hash n assign indx
  * @key: str to be converted to hash
  * @size: size of the array of ptrs to keys
- * 
+ *
  * Return: index
  *
  */
