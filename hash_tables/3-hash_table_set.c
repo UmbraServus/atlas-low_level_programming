@@ -68,6 +68,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	prev->next->key = strdup(key);
 	prev->next->value = strdup(value);
-	prev->next = prev;
+	prev->next->next = prev;
+	prev->next = NULL;
 	return (1);
 }
