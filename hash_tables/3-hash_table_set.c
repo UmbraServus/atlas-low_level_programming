@@ -56,18 +56,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 
 		prev = array_index;
-		array_index = prev->next;
+		array_index = array_index->next;
 
 	}
 
-	prev->next = array_index;
-	array_index = malloc(sizeof(hash_node_t) + 1);
-	if (array_index == NULL)
+	prev->next = malloc(sizeof(hash_node_t) + 1);
+	if (prev->next  == NULL)
 	{
 		return (-1);
 	}
-	array_index->key = strdup(key);
-	array_index->value = strdup(value);
-
+	prev->next->key = strdup(key);
+	prev->next->value = strdup(value);
+	prev->next->next = NULL;
 	return (1);
 }
