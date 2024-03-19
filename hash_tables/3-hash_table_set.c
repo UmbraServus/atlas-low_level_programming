@@ -70,6 +70,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->value = strdup(value);
 	new_node->next = NULL;
 
-	array_index = new_node;
+	prev->next = new_node;
 	return (1);
 }
