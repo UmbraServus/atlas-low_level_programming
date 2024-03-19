@@ -6,7 +6,7 @@
  * hash_djb2- a function to turn a str n2 an int for indexing in a hash table
  * @str: str to be converted to a hash using an algorithm
  *
- *
+ * Return: hash
  *
  */
 
