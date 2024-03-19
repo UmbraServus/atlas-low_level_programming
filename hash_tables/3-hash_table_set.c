@@ -34,14 +34,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 
 		array_index->value = strdup(value);
-		if (array_index->value = NULL)
+		if (array_index->value == NULL)
 		{
 			free(array_index);
 			return (-1);
 		}
 
 		array_index->next = NULL;
-		ht->array[index] = array_index
+		ht->array[index] = array_index;
 
 		return (1);
 	}
