@@ -26,7 +26,7 @@
 		
 		while (node != NULL)
 		{
-			if (comma = 1)
+			if (comma == 1)
 			{
 				printf(", ");
 			}
