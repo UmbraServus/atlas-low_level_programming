@@ -17,16 +17,19 @@
 		printf("{}");
 	}
 	
+	
+	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
 		
 		while (node != NULL)
 		{
-			printf("{");
 			printf("'%s': '%s', ", node->key, node->value);
-			printf("}");
 			node = node->next;
 		}
+
 	}
+	printf("}");
 }
+
