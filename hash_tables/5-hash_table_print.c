@@ -12,6 +12,7 @@
 {
 	unsigned long int i;
 	hash_node_t *node;
+	int comma;
 	if (ht == NULL)
 	{
 		printf("{}");
@@ -25,12 +26,13 @@
 		
 		while (node != NULL)
 		{
-			if (i >= 1)
+			if (comma = 1)
 			{
-			printf(", ");
+				printf(", ");
 			}
-
+			
 			printf("'%s': '%s'", node->key, node->value);
+			comma = 1;
 			node = node->next;
 		}
 
