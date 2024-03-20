@@ -14,7 +14,7 @@
 	hash_node_t *node;
 	if (ht == NULL)
 	{
-		return
+		printf("{}");
 	}
 	
 	for (i = 0; i < ht->size; i++)
@@ -23,9 +23,9 @@
 		
 		while (node != NULL)
 		{
-			printf({);
+			printf("{");
 			printf("'%s': '%s', ", node->key, node->value);
-			printf(});
+			printf("}");
 			node = node->next;
 		}
 	}
